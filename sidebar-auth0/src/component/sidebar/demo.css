@@ -1,0 +1,83 @@
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: rgb(8, 8, 100);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: width 0.3s ease;
+ }
+ 
+ .sidebar.closed {
+     width: 80px;
+ }
+ 
+ .sidebar-header {
+     display: flex;
+     align-items: center;
+     background-color: darkorange;
+     justify-content: space-between;
+     padding: 10px;
+ }
+ 
+ .toggle-button {
+     cursor: pointer;
+     background: none;
+     border: none;
+     display: flex;
+     align-self: center;
+     padding: 5px;
+ }
+ 
+ .toggle-button .arrow {
+     width: 0;
+     height: 0;
+     border-style: solid;
+ }
+ 
+ .toggle-button .left {
+     border-width: 8px 10px 8px 0;
+     border-color: transparent white transparent transparent;
+ }
+ 
+ .toggle-button .right {
+     border-width: 8px 0 8px 10px;
+     border-color: transparent transparent transparent white;
+ }
+ 
+ .logo {
+     text-align: center;
+ }
+ 
+ .logo h2 {
+     font-family: sans-serif;
+     font-weight: 700;
+     font-size: 14px;
+     color: rgb(16, 5, 109);
+     margin: 0;
+     flex-wrap: nowrap;
+ }
+ 
+ .nav-name ul {
+     list-style-type: none;
+     padding: 0;
+ }
+ 
+ .nav-name ul li {
+     padding: 15px 20px;
+ }
+ 
+ .nav-name ul li a {
+     color: white;
+     text-decoration: none;
+     display: flex;
+     align-items: center;
+     margin: 10px;
+ }
+ 
+ .nav-name ul li a:hover {
+     background-color: rgb(139, 128, 27);
+     padding: 6px;
+ }
+ 
